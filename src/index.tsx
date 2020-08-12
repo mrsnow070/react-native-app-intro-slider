@@ -209,7 +209,6 @@ export default class AppIntroSlider<ItemT = any> extends React.Component<
 
     return (
       <View style={styles.paginationContainer}>
-        <SafeAreaView>
           <View style={styles.paginationDots}>
             {this.props.data.length > 1 &&
               this.props.data.map((_, i) =>
@@ -239,7 +238,6 @@ export default class AppIntroSlider<ItemT = any> extends React.Component<
           </View>
           {primaryButton}
           {secondaryButton}
-        </SafeAreaView>
       </View>
     );
   };
